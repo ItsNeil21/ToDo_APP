@@ -2,6 +2,8 @@ import pandas as pd
 import streamlit as st
 from datetime import datetime
 import os
+st.cache_data.clear()  # Clears cached data
+st.session_state.clear()  # Clears session state
 
 # Force Streamlit to start with an empty dataframe
 if os.path.exists("To_Do.csv"):
